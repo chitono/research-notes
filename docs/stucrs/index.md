@@ -18,4 +18,4 @@ title: StuCrs | 深層学習の原理探究へ向けたRust製フレームワー
 
 
 ## 本研究のリポジトリはこちら
-https://github.com/chitono/StuCrs
+(https://github.com/chitono/StuCrs)

@@ -43,4 +43,4 @@ NVIDIAのGPUで実行できる機能も提供しています。その場合はst
 - [tensor_frame](https://docs.rs/tensor_frame/latest/tensor_frame/index.html) （オプション）
 
 ## 本研究のリポジトリはこちら
-(https://github.com/chitono/StuCrs)
+<https://github.com/chitono/StuCrs>

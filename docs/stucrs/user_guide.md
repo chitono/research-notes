@@ -4,19 +4,19 @@
 
 ## 目次
 
-1. [はじめに](#はじめに)
+1. [StuCrsを動かす準備](#StuCrsを動かす準備)
 2. [自動微分の設計](#自動微分の設計)
-4. [Layerの実装](#basic-operations)
-5. [Optimizerの実装](#automatic-differentiation)
-6. [Modelの実装](#hooks)
-7. [データの用意](#working-with-different-backends)
-8. [ニューラルネットワークの構築](#neural-network-operations)
-9. [学習方法](#optimizers)
-10. [CNN実装](#serialization)
-11. [CUDA対応](#examples)
-12. [今後の課題](#debugging-tips)
+3. [Layerの実装](#basic-operations)
+4. [Optimizerの実装](#automatic-differentiation)
+5. [Modelの実装](#hooks)
+6. [データの用意](#working-with-different-backends)
+7. [ニューラルネットワークの構築](#neural-network-operations)
+8. [学習方法](#optimizers)
+9. [CNN実装](#serialization)
+10. [CUDA対応](#examples)
+11. [今後の課題](#debugging-tips)
 
-## はじめに
+## StuCrsを動かす準備
 
 Add the Rust Tensor Library to your project's `Cargo.toml`:
 
@@ -34,8 +34,6 @@ rust_tensor_library = "0.1.0"
 # With both CUDA and serialization support:
 # rust_tensor_library = { version = "0.1.0", features = ["cuda", "serialization"] }
 ```
-
-### CUDA Setup (Optional)
 
 If you want to use the CUDA backend, you'll need:
 

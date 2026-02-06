@@ -4,17 +4,17 @@
 
 ## 目次
 
-1. [はじめに](#installation)
-2. [](#creating-tensors)
-3. [Basic Operations](#basic-operations)
-4. [Automatic Differentiation](#automatic-differentiation)
-5. [Hooks](#hooks)
-6. [Working with Different Backends](#working-with-different-backends)
-7. [Neural Network Operations](#neural-network-operations)
-8. [Optimizers](#optimizers)
-9. [Serialization](#serialization)
-10. [Examples](#examples)
-11. [Debugging Tips](#debugging-tips)
+1. [はじめに](#はじめに)
+2. [自動微分の設計](#自動微分の設計)
+4. [Layerの実装](#basic-operations)
+5. [Optimizerの実装](#automatic-differentiation)
+6. [Modelの実装](#hooks)
+7. [データの用意](#working-with-different-backends)
+8. [ニューラルネットワークの構築](#neural-network-operations)
+9. [学習方法](#optimizers)
+10. [CNN実装](#serialization)
+11. [CUDA対応](#examples)
+12. [今後の課題](#debugging-tips)
 
 ## はじめに
 
@@ -57,7 +57,7 @@ $env:CUBLAS_LIB_DIR = "$env:CUDA_PATH\lib\x64"
 $env:PATH = "$env:CUDA_PATH\bin;$env:PATH"
 ```
 
-## Creating Tensors
+## 自動微分の設計
 
 There are multiple ways to create tensors:
 

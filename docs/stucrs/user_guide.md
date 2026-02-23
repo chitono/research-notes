@@ -22,16 +22,14 @@
 本研究のリポジトリの中に含まれる`Dockerfile`、`compose.yaml`ファイルを用いてコンテナを立ち上げてください。(Dockerに関する使い方の説明は省略します。)  
 **注意** Dockerfileの**FROM** のところは自分の環境に適したCUDAのバージョンを指定してください。また、NVIDIA製のGPUを使用しない場合、ubuntu20.04をお使いください。
 
-<details>
-  
-  <summary>コード</summary>
+
     
 ```bash
 docker build -t cuda-im ./ #イメージ名はcuda-im
 docker compose up -d # イメージ名をcuda-imと設定しているので、イメージ名を変更したい場合はyamlファイルの中を変更してください。
 ```
 
-</details>
+
 
 ## RcVariableの仕様
 

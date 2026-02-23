@@ -69,23 +69,23 @@ pub fn sigmoid_simple(x: &RcVariable) -> RcVariable {
 この自動微分は多変数関数の微分、すなわち偏微分にも対応しています。例えば二つの変数a,bをかけた値cの式は **c = a×b** となりますが、この場合、∂c/∂a、∂c/∂bを求めることができます。
 
 ```rust 
-
 fn mul_test() {
-　　use crate::core_new::ArrayDToRcVariable;
+        use crate::core_new::ArrayDToRcVariable;
 
-　　let a = array![3.0, 3.0, 3.0, 3.0, 3.0].rv();
+        let a = array![3.0, 3.0, 3.0, 3.0, 3.0].rv();
 
-　　let b = array![2.0, 2.0, 2.0, 2.0, 2.0].rv();
+        let b = array![2.0, 2.0, 2.0, 2.0, 2.0].rv();
 
-　　let mut c = (a.clone() * b.clone());
+        let mut c = a.clone() * b.clone();
 
-　　println!("c = {}", c.data()); // 5.0
+        println!("c = {}", y.data()); // 5.0
 
-　　c.backward(false);
+        c.backward(false);
 
-　　println!("a_grad = {:?}", a.grad().unwrap().data()); // 2.0
-　　println!("b_grad = {:?}", b.grad().unwrap().data()); // 3.0
-}
+        println!("a_grad = {:?}", a.grad().unwrap().data()); // 2.0
+        println!("b_grad = {:?}", b.grad().unwrap().data()); // 3.0
+    }
+
 
 ```
 
